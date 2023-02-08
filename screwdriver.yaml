@@ -26,6 +26,7 @@ jobs:
     # convenient label to reference it by. The "command_to_run" is the single 
     # command that is executed during the step.
     steps:
+      - shell_cmd: ls -ltr
       # Our "install" step is first in the list. It installs your NodeJS dependencies
       # NPM reference document - https://docs.npmjs.com/cli/install
       - install: npm install
